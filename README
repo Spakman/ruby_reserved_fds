@@ -1,0 +1,22 @@
+ruby_reserved_fds
+===
+
+Checks if a file descriptor is reserved by the Ruby VM by creating a tiny
+module to access the Ruby C function rb_reserved_fd_p().
+
+Only tested on (and only required using) MRI 1.93 and MRI 2.0.0-dev.
+
+
+Usage
+===
+
+require "ruby_reserved_fds"
+RubyReservedFDs.reserved_fd?(3)
+
+
+Author
+===
+
+Mark Somerville <mark@scottishclimbs.com>
+https://jellyjelly.net/
+Spakman on Freenode
